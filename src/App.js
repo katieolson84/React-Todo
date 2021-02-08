@@ -36,6 +36,7 @@ handleAdd = task => {
   this.setState({
     toDo: [...this.state.toDo, { task: task, id: Date.now(), completed:false }]
   })
+
 }
 
 handleCompleted = () => {
@@ -43,6 +44,15 @@ handleCompleted = () => {
     toDo: this.state.toDo.filter(item=> (!item.completed))
   });
 }
+
+// getLocalTasks = () => {
+//   let task;
+//   if(localStorage.getItem("task") === null) {
+//     task = [];
+//   }else {
+//     task = JSON.parse(localStorage.getItem("task"));
+//   }
+// }
 
   render() {
     return (
