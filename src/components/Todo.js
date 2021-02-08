@@ -19,8 +19,10 @@ const Todo = props => {
 
     return (
         <Container>
-        <div onClick={handleClick} className={`item${props.item.completed ? ' completed' : ''}`}>
-           <p>{props.item.task}</p> 
+        <div onClick={handleClick} className={`todo${props.item.completed ? ' completed' : ''}`}>
+           <li className="todo-item">{props.item.task}</li> 
+           <button className="complete-btn"> <i className="fas fa-check"></i></button>
+           {/* <button className="trash-btn"> <i className="fas fa-trash"></i></button> */}
         </div>
         </Container>
     )

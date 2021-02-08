@@ -26,8 +26,22 @@ handleSubmit = e => {
 render() {
     return (
         <form onSubmit={this.handleSubmit}>
-            <input value={this.state.textInput} onChange={this.handleChanges} type="text" name="item" />
-            <button>Add</button>
+            <input 
+            value={this.state.textInput} 
+            onChange={this.handleChanges} 
+            type="text" 
+            name="item" 
+            className="todo-input" />
+            <button className="todo-button" type="submit">
+                <i className="fas fa-plus-square"></i>
+            </button>
+            {/* <div className="select">
+                <select name="todos" className="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div> */}
         </form>
     )
     }
