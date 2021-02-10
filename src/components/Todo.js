@@ -1,16 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const Container = styled.div `
-    .item {
-        cursor: pointer;
-    }
-    
-    .item.completed{
-        text-decoration: line-through;
-    } 
-`
-
 
 const Todo = props => {
     const handleClick = ()=> {
@@ -18,12 +6,10 @@ const Todo = props => {
     }
 
     return (
-        <Container>
         <div onClick={handleClick} className={`todo${props.item.completed ? ' completed' : ''}`}>
-           <li className="todo-item">{props.item.task}</li> 
+           <li>{props.item.task}</li> 
            {/* <button className="complete-btn"> <i className="fas fa-check"></i></button> */}
         </div>
-        </Container> 
     )
 }
 

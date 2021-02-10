@@ -4,18 +4,26 @@
     box-sizing: border-box;
   }
   body {
-    background-image: linear-gradient(120deg, #7df8c9 0%, #eb8a70 100%);
+    background-image: linear-gradient(120deg, #7df8c9 0%, #158a6c 100%);
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
   }
   header {
-    font-size: 2rem;
+    font-size: 5rem;
+    color:#158a6c;
   }
-  
+
+  .header p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    
+  }
+
   header,
   form {
-    min-height: 20vh;
+    min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,40 +66,38 @@
     justify-content: space-between;
     align-items: center;
     transition: all 1s ease;
+    cursor: pointer;
+    padding: 0rem 0.5rem;
   }
-  /* .filter-todo {
-    padding: 1rem;
-  } */
+
   .todo li {
     flex: 1;
   }
   
-  .complete-btn {
-    background: rgb(11, 212, 162);
+  /* .complete-btn {
+    background: #158a6c;
     color: white;
     border: none;
     padding: 1rem;
     cursor: pointer;
     font-size: 1rem;
-  }
+  } */
 
   .btn-container{
-      border: 1px red solid;
       display: flex;
       flex-direction: column;
   }
 
  .clear-complete-btn{
-    background: rgb(11, 212, 162);
+    background: #158a6c;
     color: white;
     border: none;
     padding: 1rem;
     cursor: pointer;
     font-size: 1rem;
+    margin: 1rem;
+    border-radius: 2px;
  }
-  .todo-item {
-    padding: 0rem 0.5rem;
-  }
   
   .fa-check {
     pointer-events: none;
